@@ -6,9 +6,12 @@ const { iceCreamActions } = require("./features/iceCream/iceCreamSlice"); // Imp
 console.log("Initial State of Features are -", store.getState());
 
 // Log the Updated State of Cake and IceCream After Changes
-const unsubscribe = store.subscribe(() => {
-  console.log("Updated State of Features are -", store.getState());
-});
+// const unsubscribe = store.subscribe(() => {
+//   console.log("Updated State of Features are -", store.getState());
+// });
+
+// Logger Middleware
+const unsubscribe = store.subscribe(() => {})
 
 // Dispatch Actions for Cake
 store.dispatch(cakeActions.ordered()); // 9
