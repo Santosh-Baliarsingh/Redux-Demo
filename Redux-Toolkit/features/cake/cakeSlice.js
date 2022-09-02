@@ -19,5 +19,5 @@ const cakeSlice = createSlice({
   },
 });
 
-module.exports = cakeSlice.reducer; // default export
-module.exports.cakeActions = cakeSlice.actions; // named export
+module.exports = cakeSlice.reducer; // Default export for Reducer 
+module.exports.cakeActions = cakeSlice.actions; // Named export for Actions
